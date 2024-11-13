@@ -1,0 +1,17 @@
+{
+  "name": "mini-ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:app": "concurrently \"cd backend && composer install\"",
+    "start": "concurrently \"cd backend && php artisan serve\""
+  },
+  "keywords": [],
+  "author": "Guilherme Delmiro",
+  "license": "ISC",
+  "description": "A ecommerce website",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
