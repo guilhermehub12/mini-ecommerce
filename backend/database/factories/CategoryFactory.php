@@ -20,7 +20,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'descricao' => $this->faker->sentence()
+            'description' => $this->faker->sentence()
         ];
     }
 }
