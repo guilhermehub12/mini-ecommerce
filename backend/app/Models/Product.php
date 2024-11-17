@@ -9,4 +9,12 @@ class Product extends Model
 {
     /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
+
+    public function getAvatarAttribute($avatar) {
+        return $avatar ? asset("/storage/products/".$avatar) : null;
+    }
+
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
 }
